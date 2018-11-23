@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RawsonPro-Bold.otf">
+            <string>RawsonPro-Bold</string>
+        </array>
+        <array key="RawsonPro-ExtraBold.otf">
+            <string>RawsonPro-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ViewHome" id="iN0-l3-epB" customClass="ViewHome" customModule="CajaLosAndesApp">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="910"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4An-6V-Bky">
+                    <rect key="frame" x="-2" y="-28" width="419" height="769"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <variation key="widthClass=compact" image="im_home"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBp-Az-1mz">
+                    <rect key="frame" x="25" y="401" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.59607843140000005" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <size key="titleShadowOffset" width="90" height="10"/>
+                    <state key="normal" title="                                            " image="Iconos/Home/home_ayuda.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnOctavo:" destination="iN0-l3-epB" eventType="touchUpInside" id="ivV-F8-6pZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIj-39-4To">
+                    <rect key="frame" x="25" y="275" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.11764705882352941" green="0.59607843137254901" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <size key="titleShadowOffset" width="90" height="10"/>
+                    <state key="normal" title="                                            " image="Iconos/Home/home_ayuda.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnQuinto:" destination="iN0-l3-epB" eventType="touchUpInside" id="foI-ZR-eJP"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1f-0G-GeR">
+                    <rect key="frame" x="25" y="302" width="60" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-Cc-47v">
+                    <rect key="frame" x="205" y="275" width="152" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.52941176469999995" green="0.1960784314" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <size key="titleShadowOffset" width="40" height="60"/>
+                    <state key="normal" image="Iconos/Home/home_beneficios.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSexto:" destination="iN0-l3-epB" eventType="touchUpInside" id="KFU-W2-L8S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v8-ZP-bbd">
+                    <rect key="frame" x="205" y="19" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.69803921568627447" green="0.11764705882352941" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="                " image="Iconos/Home/home_licencias.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSegundo:" destination="iN0-l3-epB" eventType="touchUpInside" id="v4M-Ct-dMe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Licencias Médicas" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-xg-Gwu">
+                    <rect key="frame" x="262" y="38" width="94" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91I-h7-FDR">
+                    <rect key="frame" x="25" y="19" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.74117647058823533" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="                " image="Iconos/Home/home_credito.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnPrimero:" destination="iN0-l3-epB" eventType="touchUpInside" id="lPg-8c-qGP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Créditos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-Wa-Z0J">
+                    <rect key="frame" x="84" y="37" width="104" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42z-1g-De8">
+                    <rect key="frame" x="205" y="146" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.80392156862745101" green="0.14509803921568626" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <size key="titleShadowOffset" width="40" height="60"/>
+                    <state key="normal" image="Iconos/Home/home_convenios.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCuarto:" destination="iN0-l3-epB" eventType="touchUpInside" id="SL4-J2-EEb"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-AY-MHR">
+                    <rect key="frame" x="202" y="170" width="61" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-mJ-H6I">
+                    <rect key="frame" x="21" y="401" width="340" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.15135480069999999" blue="0.2646002314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <size key="titleShadowOffset" width="90" height="10"/>
+                    <state key="normal" title="                                            " image="Iconos/Home/home_buzon.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSeptimo:" destination="iN0-l3-epB" eventType="touchUpInside" id="kxP-hp-xN1"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHp-Y1-WlI">
+                    <rect key="frame" x="31" y="411" width="67" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12v-uc-Ufe">
+                    <rect key="frame" x="25" y="146" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.2627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="                         " image="Iconos/Home/home_sucursal.png">
+                        <color key="titleShadowColor" red="0.097229294480000006" green="0.49341744180000002" blue="0.68264728779999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnTercero:" destination="iN0-l3-epB" eventType="touchUpInside" id="P9O-CD-EPV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convenios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zou-Zh-XLp">
+                    <rect key="frame" x="254" y="170" width="103" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sucursales" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-Ra-cuK">
+                    <rect key="frame" x="82" y="167" width="104" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Te ayudamos?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Oh-5Bd">
+                    <rect key="frame" x="79" y="297" width="100" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mis Beneficios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-yt-P9g">
+                    <rect key="frame" x="254" y="297" width="93" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOO-3z-QqS">
+                    <rect key="frame" x="205" y="303" width="53" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buzón de Mensajes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-hL-xb4">
+                    <rect key="frame" x="119" y="412" width="218" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doH-bm-Qx2">
+                    <rect key="frame" x="22" y="44" width="57" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4A-pd-Wjc">
+                    <rect key="frame" x="203" y="37" width="53" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAu-He-wyj">
+                    <rect key="frame" x="24" y="170" width="48" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3I-tY-8Si">
+                    <rect key="frame" x="206" y="401" width="151" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.59607843140000005" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <size key="titleShadowOffset" width="90" height="10"/>
+                    <state key="normal" title="                                            " image="Iconos/Home/home_ayuda.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="3" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnNoveno:" destination="iN0-l3-epB" eventType="touchUpInside" id="eHJ-8O-9T3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyg-le-51h">
+                    <rect key="frame" x="254" y="431" width="93" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXZ-ps-wdf">
+                    <rect key="frame" x="79" y="427" width="97" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="RawsonPro-ExtraBold" family="Rawson Pro" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-Do-Sjo">
+                    <rect key="frame" x="202" y="422" width="65" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVT-VY-5vn">
+                    <rect key="frame" x="19" y="420" width="65" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.5490196078431373" green="0.76078431372549016" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnCuarto" destination="42z-1g-De8" id="Y42-mG-emh"/>
+                <outlet property="btnNoveno" destination="S3I-tY-8Si" id="8Bn-3v-bo6"/>
+                <outlet property="btnOctavo" destination="uBp-Az-1mz" id="5FL-5W-GTz"/>
+                <outlet property="btnPrimero" destination="91I-h7-FDR" id="zwY-1o-3rr"/>
+                <outlet property="btnQuinto" destination="IIj-39-4To" id="ngT-KF-4Em"/>
+                <outlet property="btnSegundo" destination="9v8-ZP-bbd" id="Wa0-9V-cqG"/>
+                <outlet property="btnSeptimo" destination="1GX-mJ-H6I" id="xHh-vy-OJD"/>
+                <outlet property="btnSexto" destination="6uD-Cc-47v" id="Sol-Dx-NKR"/>
+                <outlet property="btnTercero" destination="12v-uc-Ufe" id="LBZ-15-8td"/>
+                <outlet property="imgCuarto" destination="iKc-AY-MHR" id="guH-e2-1dv"/>
+                <outlet property="imgNoveno" destination="Qib-Do-Sjo" id="jUp-d2-tkC"/>
+                <outlet property="imgOctavo" destination="sVT-VY-5vn" id="81t-dz-bKK"/>
+                <outlet property="imgPrimero" destination="doH-bm-Qx2" id="Jpc-vJ-BY7"/>
+                <outlet property="imgQuinto" destination="b1f-0G-GeR" id="iwc-de-vfv"/>
+                <outlet property="imgSegundo" destination="L4A-pd-Wjc" id="8Qs-2A-zxb"/>
+                <outlet property="imgSeptimo" destination="aHp-Y1-WlI" id="Eck-rs-UMh"/>
+                <outlet property="imgSexto" destination="JOO-3z-QqS" id="eEZ-L2-P9h"/>
+                <outlet property="imgTercero" destination="yAu-He-wyj" id="EMt-k4-BtS"/>
+                <outlet property="lblCuarto" destination="Zou-Zh-XLp" id="yIK-02-xBp"/>
+                <outlet property="lblNoveno" destination="Pyg-le-51h" id="EIL-8s-j7u"/>
+                <outlet property="lblOctavo" destination="JXZ-ps-wdf" id="KfQ-YK-v4J"/>
+                <outlet property="lblPrimero" destination="JPy-Wa-Z0J" id="vwD-yJ-9RN"/>
+                <outlet property="lblQuinto" destination="c2h-Oh-5Bd" id="MY7-DA-q2D"/>
+                <outlet property="lblSegundo" destination="pf2-xg-Gwu" id="Qdu-aR-LyD"/>
+                <outlet property="lblSeptimo" destination="DAK-hL-xb4" id="bwk-sp-lSs"/>
+                <outlet property="lblSexto" destination="bSR-yt-P9g" id="qyD-BL-DWl"/>
+                <outlet property="lblTercero" destination="Y7m-Ra-cuK" id="PGn-7g-lYP"/>
+            </connections>
+            <point key="canvasLocation" x="-69.599999999999994" y="150.22488755622189"/>
+        </view>
+        <viewController restorationIdentifier="DashboardController" storyboardIdentifier="DashboardController" id="Wl2-Cr-lpX" customClass="DashboardController">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="eJh-Uu-b0r"/>
+                <viewControllerLayoutGuide type="bottom" id="2yy-im-AWf"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="j4V-Hj-yP4">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dxw-LP-3O5">
+                        <rect key="frame" x="-2" y="18" width="379" height="651"/>
+                        <variation key="widthClass=compact" image="im_home"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xv-oI-tsU">
+                        <rect key="frame" x="15" y="286" width="164" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <size key="titleShadowOffset" width="90" height="10"/>
+                        <state key="normal" title="                                            " image="Iconos/Home/home_ayuda.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPF-dz-4WL">
+                        <rect key="frame" x="195" y="286" width="162" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.52941176469999995" green="0.1960784314" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <size key="titleShadowOffset" width="40" height="60"/>
+                        <state key="normal" image="Iconos/Home/home_beneficios.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-5b-JZb" userLabel="Stack Container">
+                        <rect key="frame" x="9" y="643" width="34" height="24"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack2" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cc3-bT-UXm">
+                                <rect key="frame" x="80" y="186" width="77" height="16"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack1" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YCv-hC-AZd">
+                                <rect key="frame" x="80" y="150" width="77" height="88"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack5" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yuy-Z8-5Tl">
+                                <rect key="frame" x="157" y="186" width="0.0" height="16"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack3" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZpQ-vT-45E">
+                                <rect key="frame" x="80" y="186" width="77" height="16"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack6" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="psA-dz-LZh">
+                                <rect key="frame" x="157" y="186" width="0.0" height="16"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Stack4" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-TO-nKt">
+                                <rect key="frame" x="80" y="186" width="77" height="16"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="trailing" secondItem="psA-dz-LZh" secondAttribute="trailing" id="1ZU-OU-Fjw"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="centerY" secondItem="YCv-hC-AZd" secondAttribute="centerY" id="2hW-A5-GaI"/>
+                            <constraint firstItem="Cc3-bT-UXm" firstAttribute="leading" secondItem="m0R-TO-nKt" secondAttribute="leading" id="4l9-EG-Vzo"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="leading" secondItem="m0R-TO-nKt" secondAttribute="leading" id="9sn-8i-spi"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="top" secondItem="m0R-TO-nKt" secondAttribute="top" id="G5Z-YQ-iX3"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="top" secondItem="hAh-5b-JZb" secondAttribute="top" constant="186" id="H0w-hR-bth"/>
+                            <constraint firstItem="Yuy-Z8-5Tl" firstAttribute="leading" secondItem="ZpQ-vT-45E" secondAttribute="trailing" id="IIq-OH-wwm"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="bottom" secondItem="m0R-TO-nKt" secondAttribute="bottom" id="KLR-wQ-pQz"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="leading" secondItem="YCv-hC-AZd" secondAttribute="leading" id="LVo-UB-Oiz"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="centerY" secondItem="hAh-5b-JZb" secondAttribute="centerY" constant="182" id="MwV-Ah-eFa"/>
+                            <constraint firstItem="YCv-hC-AZd" firstAttribute="top" secondItem="hAh-5b-JZb" secondAttribute="top" constant="150" id="Qco-Vt-tir"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="trailing" secondItem="Yuy-Z8-5Tl" secondAttribute="trailing" id="RCF-W2-J6P"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="trailing" secondItem="m0R-TO-nKt" secondAttribute="trailing" id="UKZ-QU-mfS"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="top" secondItem="Yuy-Z8-5Tl" secondAttribute="top" id="Xt3-yL-xmu"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="bottom" secondItem="Cc3-bT-UXm" secondAttribute="bottom" id="Y6F-Dz-oQI"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="centerX" secondItem="hAh-5b-JZb" secondAttribute="centerX" constant="101.5" id="eD1-uA-SX3"/>
+                            <constraint firstItem="YCv-hC-AZd" firstAttribute="trailing" secondItem="Cc3-bT-UXm" secondAttribute="trailing" id="igc-07-T7J"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="leading" secondItem="hAh-5b-JZb" secondAttribute="leading" constant="157" id="ihS-3h-jN7"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="bottom" secondItem="ZpQ-vT-45E" secondAttribute="bottom" id="mZA-Db-Wgy"/>
+                            <constraint firstItem="Cc3-bT-UXm" firstAttribute="top" secondItem="psA-dz-LZh" secondAttribute="top" id="nTi-EB-MJF"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="trailing" secondItem="Cc3-bT-UXm" secondAttribute="trailing" id="pqt-2v-tfD"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="leading" secondItem="Yuy-Z8-5Tl" secondAttribute="leading" id="vCp-dd-qwy"/>
+                            <constraint firstItem="ZpQ-vT-45E" firstAttribute="top" secondItem="psA-dz-LZh" secondAttribute="top" id="vMf-QJ-a1b"/>
+                            <constraint firstItem="psA-dz-LZh" firstAttribute="bottom" secondItem="Yuy-Z8-5Tl" secondAttribute="bottom" id="xbw-Oy-9K4"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T69-6D-XEz">
+                        <rect key="frame" x="196" y="30" width="163" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.80564111469999999" green="0.14589732890000001" blue="0.69112521410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="                " image="Iconos/Home/home_licencias.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Licencias Médicas" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3A-lO-dBp">
+                        <rect key="frame" x="256" y="56" width="84" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elF-Ir-cGk">
+                        <rect key="frame" x="15" y="30" width="162" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.75686274509999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="                " image="Iconos/Home/home_credito.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Créditos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-Jn-Jod">
+                        <rect key="frame" x="85" y="69" width="86" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqQ-dQ-0aQ">
+                        <rect key="frame" x="195" y="157" width="162" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.70980392160000005" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <size key="titleShadowOffset" width="40" height="60"/>
+                        <state key="normal" image="Iconos/Home/home_convenios.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI7-aC-ICd">
+                        <rect key="frame" x="15" y="412" width="344" height="80"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.15135480069999999" blue="0.2646002314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <size key="titleShadowOffset" width="90" height="10"/>
+                        <state key="normal" title="                                            " image="Iconos/Home/home_buzon.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftM-DY-Otd">
+                        <rect key="frame" x="195" y="412" width="164" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.58823529409999997" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <size key="titleShadowOffset" width="90" height="10"/>
+                        <state key="normal" title="                                            " image="Iconos/Home/home_buzon.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGc-wA-Y6T">
+                        <rect key="frame" x="15" y="157" width="164" height="109"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.44614762070000002" green="0.83460170030000003" blue="0.29011932019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="                         " image="Iconos/Home/home_sucursal.png">
+                            <color key="titleShadowColor" red="0.097229294480000006" green="0.49341744180000002" blue="0.68264728779999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convenios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFr-mH-OFG">
+                        <rect key="frame" x="267" y="198" width="93" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sucursales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoQ-Bp-pVe">
+                        <rect key="frame" x="83" y="198" width="97" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Te ayudamos?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy6-P0-cTm">
+                        <rect key="frame" x="82" y="309" width="89" height="62"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mis Beneficios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vay-FE-GPG">
+                        <rect key="frame" x="256" y="310" width="91" height="61"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDD-TF-1YS">
+                        <rect key="frame" x="250" y="435" width="97" height="58"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buzón de Mensajes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L10-V7-ZBZ">
+                        <rect key="frame" x="107" y="423" width="195" height="58"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="RawsonPro-Bold" family="Rawson Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="dxw-LP-3O5" firstAttribute="width" secondItem="j4V-Hj-yP4" secondAttribute="width" constant="4" id="6gI-ui-Wps"/>
+                    <constraint firstItem="dxw-LP-3O5" firstAttribute="centerX" secondItem="j4V-Hj-yP4" secondAttribute="centerX" id="Eqc-WY-MsV"/>
+                    <constraint firstItem="2yy-im-AWf" firstAttribute="top" secondItem="dxw-LP-3O5" secondAttribute="bottom" constant="-2" id="Ijv-8H-qcV"/>
+                    <constraint firstItem="hAh-5b-JZb" firstAttribute="leading" secondItem="j4V-Hj-yP4" secondAttribute="leadingMargin" constant="-7" id="JPU-Jo-W5H"/>
+                    <constraint firstItem="2yy-im-AWf" firstAttribute="top" secondItem="hAh-5b-JZb" secondAttribute="bottom" id="M2h-dY-yjU"/>
+                    <constraint firstItem="dxw-LP-3O5" firstAttribute="top" secondItem="eJh-Uu-b0r" secondAttribute="bottom" constant="-2" id="Urd-nV-A0s"/>
+                    <constraint firstItem="hAh-5b-JZb" firstAttribute="centerX" secondItem="j4V-Hj-yP4" secondAttribute="centerX" constant="-161.5" id="ydM-5d-JPH"/>
+                    <constraint firstItem="hAh-5b-JZb" firstAttribute="top" secondItem="eJh-Uu-b0r" secondAttribute="bottom" constant="623" id="zp8-y9-Jgu"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="odb-PJ-Oiv"/>
+            </view>
+            <point key="canvasLocation" x="974" y="-10"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="Iconos/Home/home_ayuda.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_beneficios.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_buzon.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_convenios.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_credito.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_licencias.png" width="16" height="16"/>
+        <image name="Iconos/Home/home_sucursal.png" width="16" height="16"/>
+        <image name="im_home" width="370" height="597"/>
+    </resources>
+</document>

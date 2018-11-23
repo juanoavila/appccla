@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CryptoSwift (0.12.0)
+  - EVReflection (4.19.1):
+    - EVReflection/Core (= 4.19.1)
+  - EVReflection/Core (4.19.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Realm (3.9.0):
+    - Realm/Headers (= 3.9.0)
+  - Realm/Headers (3.9.0)
+  - RealmSwift (3.9.0):
+    - Realm (= 3.9.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - CryptoSwift
+  - EVReflection
+  - IQKeyboardManagerSwift
+  - RealmSwift (~> 3.9.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CryptoSwift
+    - EVReflection
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
+  EVReflection: 93817c1981460105cd3b44c67ea87a5b6f5bb98e
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Realm: 3d36f208bf3aff8335dc3298742140182bde4edb
+  RealmSwift: aa4d11917bfcfaa3ed51f219102a487ecd895447
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 1a7f14d9ba49c882b6685542f11f3ece3381c0ca
+
+COCOAPODS: 1.5.3

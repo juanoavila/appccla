@@ -1,0 +1,11 @@
+framework module VendoWallet {
+  umbrella header "VendoWallet.h"
+
+  export *
+  module * { export * }
+}
+
+module VendoWallet.Swift {
+    header "VendoWallet-Swift.h"
+    requires objc
+}

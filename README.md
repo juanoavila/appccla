@@ -1,2 +1,0 @@
-# appccla
-app de ccla
