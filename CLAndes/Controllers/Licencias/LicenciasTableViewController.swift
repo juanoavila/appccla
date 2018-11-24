@@ -31,7 +31,7 @@ class LicenciasTableViewController: UITableViewController {
         //vista cuando no se encuentran datos
         
         viewEmpty.frame = view.frame
-        viewEmpty.backgroundColor = .gray
+        viewEmpty.backgroundColor = .white
         
         let imageEmpty = UIImageView()
         imageEmpty.frame = CGRect(x: view.frame.width / 2 - 50, y: 40, width: 100, height: 100)

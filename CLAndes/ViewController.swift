@@ -214,11 +214,7 @@ class ViewController: UIViewController {
        
         appDelegate?.llenaArray()
         appDelegate?.construyeMenu()
-         self.viewDidLoad()
-       /* var storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
-        let login = storyboard.instantiateViewController(withIdentifier: "LoginController")
-        self.navigationController?.pushViewController(login, animated: true)*/
-        
+        self.viewDidLoad()
     }
     
     func abrirVista(vista : String, mensajeModulo: String = ""){

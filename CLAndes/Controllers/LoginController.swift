@@ -129,10 +129,17 @@ class LoginController: UIViewController {
         
         let newString = txtRut.text!.replacingOccurrences(of: ".", with: "")
         let rutFinal = newString.replacingOccurrences(of: "-", with: "")
-        let urlString = "https://mfpqa-cajalosandes.mybluemix.net/mfp/api/adapters/UserPrueba2/ListaCuentaBancaria?rut=\(rutFinal)"
+        let urlString = "https://mfpqa-cajalosandes.mybluemix.net/mfp/api/adapters/User/ListaCuentaBancaria?rut=\(rutFinal)"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) {
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        
+        let token = UserDefaults.standard.string(forKey: "access_token")
+        request.addValue("\(token!)", forHTTPHeaderField: "Authorization")
+        
+        URLSession.shared.dataTask(with: request as URLRequest) {
             (data, _, err) in DispatchQueue.main.async {
                 if let err = err {
                     print("Failed to get data from url:", err)
@@ -381,18 +388,6 @@ class LoginController: UIViewController {
             url = "https://mfpqa-cajalosandes.mybluemix.net/mfp/api/adapters/menuIOS/MenuIOS?tipo=2"
         }
         do {
-            
-            
-            
-            //let validator = try UtilRut.validadorRut(input: txtRut.text?.uppercased())
-            //group.enter()
-           // let pw = UtilRut.encryptarPass(pass: txtPass.text!)
-            //validateUser(rut: txtRut.text!, password: pw)
-            //group.wait()
-           // if (!self.access) {
-             //   self.sendAlert(titulo: "Error en Login", mensaje: "Rut o contraseña con incorrectos.")
-              //  loadingView.hide()
-            //}else{
                 var tipoUser = 1
                 UserDefaults.standard.set("afiliado" , forKey: "esCarga")
                 if (esCarga){
@@ -687,7 +682,7 @@ struct PersonaResponse: Decodable{
 struct DetallesResponse: Decodable{
     var numeroMovil : Int
     var numeroTelefono : Int
-    var email : String
+    var email : String = ""
     var codigoTelefonoMovil : CodCelResponse
     var codigoTelefono : CodTelResponse
 }

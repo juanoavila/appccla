@@ -16,10 +16,9 @@ class ListadoMensajesTableViewController: UITableViewController {
     let viewEmpty = UIView()
     let group = DispatchGroup()
     var respDefault = InboxDefaultResponse()
+    var loadView = UIView()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
         let rut = UserDefaults.standard.string(forKey: "rut")
         
         self.group.enter()
@@ -55,6 +54,16 @@ class ListadoMensajesTableViewController: UITableViewController {
             self.tableView.addSubview(self.viewEmpty)
         }
         
+        loadView.isHidden = true
+        dissabledCargando()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadView = getEmptyView(vista: view)
+        view.addSubview(loadView)
+        enabledCargando(msg: "Espera unos segundos")
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

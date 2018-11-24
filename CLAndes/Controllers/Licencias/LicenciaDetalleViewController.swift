@@ -112,20 +112,6 @@ class LicenciaDetalleViewController: UIViewController, UITableViewDelegate, UITa
         loadView = getEmptyView(vista: view)
         view.addSubview(loadView)
         enabledCargando(msg: "Espera unos segundos")
-        
-//        guard let bundleURL = Bundle.main
-//            .url(forResource: "load", withExtension: "gif") else {
-//                print("SwiftGif: This image named load does not exist")
-//                return
-//        }
-//        guard let imageData = try? Data(contentsOf: bundleURL) else {
-//            print("SwiftGif: Cannot turn image named load into NSData")
-//            return
-//        }
-//
-//        SVProgressHUD.setInfoImage(gifImageWithData(imageData))
-        
-        
     }
     
     @objc func segueModificarPago(_ sender: UIButton!){
@@ -212,6 +198,7 @@ class LicenciaDetalleViewController: UIViewController, UITableViewDelegate, UITa
         }else{
             labelEstadoCaja.text = "No tienes tramitación pendiente"
         }
+        
         if(formaPagoTxt.isEmpty){
             self.formaPagoTxt = "Banco: \(estadoSolPago.nombreBanco) \n\n"
             self.formaPagoTxt.append("Tipo de cuenta: \(estadoSolPago.tipoCuenta) \n\n")
@@ -297,10 +284,10 @@ class LicenciaDetalleViewController: UIViewController, UITableViewDelegate, UITa
                                           width: labelTitleEstadoCompin.frame.width, height: labelTitleEstadoCompin.frame.height)
         
         viewEstCompin.frame = CGRect(x: viewEstCompin.frame.minX, y: viewEstCompin.frame.minY + value,
-                                     width: viewEstCompin.frame.width, height: CGFloat(estadoCompin.calculateMaxLines() * 25))
+                                     width: viewEstCompin.frame.width, height: CGFloat(estadoCompin.calculateMaxLines() * 35))
         viewEstCompin.layer.cornerRadius = 5;
         viewEstCompin.layer.masksToBounds = true;
-        estadoCompin.lineBreakMode = .byWordWrapping
+        //estadoCompin.lineBreakMode = .byWordWrapping
 //      ************* Final Sección estado Compin ********************
         
         estadosCLATitle.frame = CGRect(x: estadosCLATitle.frame.minX, y: viewEstCompin.frame.minY + viewEstCompin.frame.height + 10,
@@ -561,7 +548,7 @@ class LicenciaDetalleViewController: UIViewController, UITableViewDelegate, UITa
             }
             do {
                 self.countAsync += 1
-                
+                print("DATOS: \(String(decoding: data, as: UTF8.self))")
                 let datos = try JSONSerialization.jsonObject(with: data, options : .allowFragments) as AnyObject
                 if let dts = datos["data"] as? [NSDictionary] {
                     if(dts.count > 0){
