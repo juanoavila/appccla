@@ -405,67 +405,70 @@ class LoginController: UIViewController {
                             let decoder = JSONDecoder()
                             do {
                                 let responseObject = try decoder.decode(ResponseObject.self, from: data)
-                                print("Resudedededeelt: \(responseObject.respuesta)")
                                 let realm = try! Realm()
                                 arrayNomMenu.append("Bienvenido")
                                 arrayNomMenu.append(self.nombre)
                                 for efe in responseObject.respuesta {
-                                    let menuIos  = MenuIos()
-                                    
-                                    menuIos.setValue(efe.titulo, forKey: "titulo")
-                                    menuIos.setValue(efe.visible, forKey: "visible")
-                                    menuIos.setValue(efe.vista_ios, forKey: "vista_ios")
-                                    arrayNomMenu.append(efe.titulo)
-                                    arrayNomHome.append(efe.titulo)
-                                    if let index = arrayNomHome.index(of: "On Boarding") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                    if let index = arrayNomMenu.index(of: "Vendomatica") {
-                                        arrayNomMenu.remove(at: index)
-                                    }
-                                    if let index = arrayNomHome.index(of: "Cerrar sesión") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                    if let index = arrayNomHome.index(of: "Certificados") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                    if let index = arrayNomMenu.index(of: "Certificados") {
-                                        arrayNomMenu.remove(at: index)
-                                    }
-                                    if let index = arrayNomHome.index(of: "Mi cuenta") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                    if let index = arrayNomHome.index(of: "Home") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                  
-                                    if let index = arrayNomHome.index(of: "Empresas") {
-                                        arrayNomHome.remove(at: index)
-                                    }
-                                    if let index = arrayNomMenu.index(of: "Empresas") {
-                                        arrayNomMenu.remove(at: index)
-                                    }
-                                    if let index = arrayNomMenu.index(of: "On Boarding") {
-                                        arrayNomMenu.remove(at: index)
-                                    }
-                                    let myDog = Dog()
-                                    myDog.name = "eeeedde"
-                                    myDog.age = "xxsxs"
-                                    myDog.mas = "effr"
-                                    
-                                    self.guardarPersona(myDog: myDog)
-                                    do {
-                                        try! realm.write {
-                                            realm.add(menuIos)
+                                        let menuIos  = MenuIos()
+                                        
+                                        menuIos.setValue(efe.titulo, forKey: "titulo")
+                                        menuIos.setValue(efe.visible, forKey: "visible")
+                                        menuIos.setValue(efe.vista_ios, forKey: "vista_ios")
+                                        if(efe.visible == "t"){
+                                            arrayNomMenu.append(efe.titulo)
                                         }
-                                    }catch  {
-                                        print(error)
+                                        arrayNomHome.append(efe.titulo)
+                                        if let index = arrayNomHome.index(of: "On Boarding") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                        if let index = arrayNomMenu.index(of: "Vendomatica") {
+                                            arrayNomMenu.remove(at: index)
+                                        }
+                                        if let index = arrayNomHome.index(of: "Cerrar sesión") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                        if let index = arrayNomHome.index(of: "Certificados") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                        if let index = arrayNomMenu.index(of: "Certificados") {
+                                            arrayNomMenu.remove(at: index)
+                                        }
+                                        if let index = arrayNomHome.index(of: "Mi cuenta") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                        if let index = arrayNomHome.index(of: "Home") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                      
+                                        if let index = arrayNomHome.index(of: "Empresas") {
+                                            arrayNomHome.remove(at: index)
+                                        }
+                                        if let index = arrayNomMenu.index(of: "Empresas") {
+                                            arrayNomMenu.remove(at: index)
+                                        }
+                                        if let index = arrayNomMenu.index(of: "On Boarding") {
+                                            arrayNomMenu.remove(at: index)
+                                        }
+                                    
+                                        let myDog = Dog()
+                                        myDog.name = "eeeedde"
+                                        myDog.age = "xxsxs"
+                                        myDog.mas = "effr"
+                                        
+                                        self.guardarPersona(myDog: myDog)
+                                        do {
+                                            try! realm.write {
+                                                realm.add(menuIos)
+                                            }
+                                        }catch  {
+                                            print(error)
+                                        }
                                     }
-                                }
                                 
                                 UserDefaults.standard.set(true , forKey: "loggin")
                                 
                                 UserDefaults.standard.set(arrayNomHome , forKey: "arregloHomeNom")
+                                print("arrayNomMenu \(arrayNomMenu)")
                                 UserDefaults.standard.set(arrayNomMenu , forKey: "arregloMenuNom")
                                 let appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
                                 appDelegate?.construyeMenu()
@@ -481,8 +484,8 @@ class LoginController: UIViewController {
             
 
         } catch {
-            sendAlert(titulo: "Error en Login", mensaje: "Ocurrio un error no especificado")
             dissabledCargando()
+            sendAlert(titulo: "Error en Login", mensaje: "Ocurrio un error no especificado")
         }
     }
     @IBAction func olvidastePass(_ sender: Any) {
